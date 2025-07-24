@@ -6,18 +6,13 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   Check,
-  ChevronRight,
   Menu,
   X,
   Moon,
   Sun,
   ArrowRight,
   Star,
-  Zap,
-  Shield,
   Users,
-  BarChart,
-  Layers,
   Activity,
   Bell,
   MapPin,
