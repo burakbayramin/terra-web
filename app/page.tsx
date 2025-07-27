@@ -125,7 +125,7 @@ export default function LandingPage() {
               </div>
             {/* <span>Terra</span> */}
           </div>
-          <nav className="hidden md:flex gap-8">
+          <nav className="hidden md:flex gap-8 absolute left-1/2 -translate-x-1/2">
             <Link
               href="#features"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
