@@ -72,39 +72,39 @@ export default function LandingPage() {
 
   const features = [
     {
-      title: "Gerçek Zamanlı Deprem Bildirimleri",
+      title: "Gerçek Zamanlı Deprem Uyarıları",
       description:
-        "Yakınınızdaki depremler için anında bildirim alın, her zaman güvende kalın.",
+        "Anında bildirimle hayatınızı ve sevdiklerinizi koruyun.",
       icon: <Bell className="size-5" />,
     },
     {
       title: "Yapay Zeka Destekli Risk Analizi",
       description:
-        "Bölgenizin deprem riskini gelişmiş yapay zeka algoritmaları ve güncel verilerle analiz edin.",
+        "Gelişmiş yapay zeka teknolojisiyle, bölgenizdeki deprem riskini en doğru ve hızlı şekilde analiz edin. Hayatınızı güvence altına alın.",
       icon: <Activity className="size-5" />,
     },
     {
       title: "Etkileşimli Tehlike Haritaları",
       description:
-        "Canlı sismik aktiviteleri ve risk bölgelerini kolayca harita üzerinden görüntüleyin.",
+        "Canlı sismik hareketleri anlık takip edin, riskli bölgeleri harita üzerinde görün ve her an kontrolü elinizde tutun.",
       icon: <MapPin className="size-5" />,
     },
     {
       title: "Kişiselleştirilmiş Güvenlik Önerileri",
       description:
-        "Deprem öncesi, sırası ve sonrasında kendinizi ve ailenizi korumanız için özel tavsiyeler alın.",
+        "Size ve ailenize özel, deprem öncesi, sırası ve sonrasında almanız gereken güvenlik önlemlerini adım adım öğrenin, hazırlıklı olun.",
       icon: <ShieldCheck className="size-5" />,
     },
     {
       title: "Topluluk Paylaşımları ve Raporlar",
       description:
-        "Diğer kullanıcıların ve uzmanların paylaşımlarına erişin, kendi deneyimlerinizi paylaşın.",
+        "Uzmanların ve kullanıcıların gerçek deneyimlerine erişin, toplulukla güçlenin ve kendi deneyimlerinizi paylaşarak fark yaratın.",
       icon: <Users className="size-5" />,
     },
     {
       title: "Acil Durum Kaynakları",
       description:
-        "Acil durumda ihtiyaç duyacağınız iletişim, barınma ve ilk yardım kaynaklarına hızla ulaşın.",
+        "Kriz anında hayat kurtaran iletişim bilgileri, barınma ve ilk yardım kaynaklarına hızlıca ulaşın; güvende kalın, hazırlıklı olun.",
       icon: <Phone className="size-5" />,
     },
   ];
@@ -116,11 +116,13 @@ export default function LandingPage() {
           isScrolled ? "bg-background/80 shadow-sm" : "bg-transparent"
         }`}
       >
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container flex h-20 items-center justify-between">
           <div className="flex items-center gap-2 font-bold">
-            <div className="h-8 px-2 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
-              TERRA
-            </div>
+          <div className="h-10 px-2 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground"
+                style={{ fontFamily: "'TT Fors Trial Demibold', sans-serif", letterSpacing: "0.17em" }}>
+                <img src="/icons/terraicon.png" alt="icon" className="h-12 w-12 mr-1" />
+                TERRA 
+              </div>
             {/* <span>Terra</span> */}
           </div>
           <nav className="hidden md:flex gap-8">
@@ -137,7 +139,7 @@ export default function LandingPage() {
               Yorumlar
             </Link>
             <Link
-              href="#coming-soon"
+              href="#futurefeatures"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               Gelecek Özellikler
@@ -273,11 +275,10 @@ export default function LandingPage() {
                 Depremden Bir Adım Önde Ol
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Toplumların bilinçlenmesini, yerel riskleri analiz etmesini ve
-                daha akıllı tepki vermesini sağlayan hepsi bir arada deprem
-                farkındalık platformu. Gerçek zamanlı sismik aktiviteleri takip
-                edin, bulunduğunuz bölgenin risk seviyesini analiz edin ve
-                güvenliği bir alışkanlığa dönüştürün.
+              Toplumların bilinçlenmesini, yerel deprem risklerini analiz etmesini ve daha akıllı
+              tepkiler geliştirmesini sağlayan kapsamlı bir farkındalık platformu. Gerçek zamanlı
+              sismik aktiviteleri takip edin, bulunduğunuz bölgenin risk seviyesini değerlendirin.
+              Riskleri tanıyın, önleminizi alın, güvende olun.
               </p>
               {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="rounded-full h-12 px-8 text-base">
@@ -371,16 +372,16 @@ export default function LandingPage() {
                 Öne Çıkanlar
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Her Şey Tek Platformda: Deprem Güvenliği ve Bilgi Yönetiminde
-                Yeni Standart
+              Yapay Zeka Destekli Risk Analizleri, Anlık Bildirimler ve Kullanıcı Ağları, Hepsi Tek Platformda!!
               </h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Terra, deprem risk analizi, gerçek zamanlı bildirimler ve
-                bölgesel tehlike haritaları gibi tüm önemli özellikleri tek
-                platformda bir araya getirir. Bulunduğunuz bölgedeki riskleri
-                hızlıca öğrenin, afet anında kritik bilgilere ve güncel
-                haberlere anında ulaşın. Kullanıcı dostu arayüzü ve güvenilir
-                verileriyle Terra, deprem güvenliği ve bilinçlenmede yanınızda.
+              Terra, deprem risk analizinden gerçek zamanlı bildirimlere; 
+              bölgesel tehlike haritalarından anlık uyarılara kadar tüm kritik bilgileri, 
+              tek bir platformda sunar. Bulunduğunuz bölgedeki riskleri hızlıca keşfedin, 
+              afet anında hayat kurtaran bilgilere ve güncel haberlere anında erişin. 
+              Kullanıcı dostu arayüzü ve güvenilir verileriyle Terra; sadece bilgi vermekle kalmaz, 
+              sizi ve sevdiklerinizi deprem karşısında güvende tutar. Şimdi Terra ile bilinçlenin, 
+              hazırlıklı olun ve fark yaratın!
               </p>
             </motion.div>
 
@@ -434,8 +435,7 @@ export default function LandingPage() {
                 Basit Süreç, Güçlü Sonuçlar
               </h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Dakikalar içinde başlayın ve platformumuzun hayatınıza nasıl
-                farklılık katabileceğini görün.
+              Sadece dakikalar içinde başlayın, sevdiklerinizi ve kendinizi deprem risklerine karşı koruyun.
               </p>
             </motion.div>
 
@@ -594,7 +594,7 @@ export default function LandingPage() {
 
         {/* Pricing Section */}
         <section
-          id="pricing"
+          id="futurefeatures"
           className="w-full py-20 md:py-32 bg-muted/30 relative overflow-hidden"
         >
           <div className="absolute inset-0 -z-10 h-full w-full bg-white dark:bg-black bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#1f1f1f_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_40%,transparent_100%)]"></div>
@@ -611,327 +611,321 @@ export default function LandingPage() {
                 className="rounded-full px-4 py-1.5 text-sm font-medium"
                 variant="secondary"
               >
-                Gelecek Özellikler
-              </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Çok Yakında: Yeni Özellikler
-              </h2>
-              <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Terra'yı sürekli geliştiriyoruz. Çok yakında topluluk talepleri
-                ve son teknolojiyle desteklenen yeni özellikler hizmetinizde
-                olacak. Sizi ve sevdiklerinizi daha güvende tutmak için
-                çalışmaya devam ediyoruz.
-              </p>
-            </motion.div>
+                  Gelecek Özellikler
+                </Badge>
+                <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+                Çok Yakında: Yepyeni Özellikler
+                </h2>
+                <p className="max-w-[800px] text-muted-foreground md:text-lg">
+                Terra’yı sürekli geliştiriyoruz. Çok yakında, 
+                topluluk istekleri ve en son teknolojiyle 
+                güçlendirilmiş yeni özellikler sizlerle buluşacak. 
+                Güvenliğinizi artırmak ve deneyiminizi mükemmelleştirmek 
+                için durmadan çalışıyoruz. Hazır olun, farkı hissedin!
+                </p>
+              </motion.div>
 
-            <div className="mx-auto max-w-5xl">
-              <Tabs defaultValue="in-progress" className="w-full">
-                <div className="flex justify-center mb-8">
-                  <TabsList className="rounded-full p-1">
-                    <TabsTrigger
-                      value="in-progress"
-                      className="rounded-full px-6"
-                    >
-                      Geliştiriliyor
-                    </TabsTrigger>
-                    <TabsTrigger value="soon" className="rounded-full px-6">
-                      Yakında
-                    </TabsTrigger>
-                  </TabsList>
-                </div>
-                <TabsContent value="in-progress">
-                  <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
-                    {[
-                      {
-                        name: "Ücretsiz Üyelik",
-                        description:
-                          "Temel deprem güvenliği için ihtiyaç duyduğunuz başlıca özelliklere hemen erişin.",
-                        features: [
-                          "Gerçek zamanlı deprem bildirimleri",
-                          "Bölgesel tehlike haritaları",
-                          "Temel risk analizi",
-                          "Kişiselleştirilmiş güvenlik önerileri",
-                        ],
-                        cta: "Hemen Başla",
-                        popular: true,
-                      },
-                      {
-                        name: "Premium Üyelik",
-                        description:
-                          "Gelişmiş analizler ve ek güvenlik araçları ile deprem güvenliğinizi bir üst seviyeye taşıyın.",
-                        features: [
-                          "Gelişmiş risk ve tehlike analizleri",
-                          "Detaylı raporlar ve geçmiş deprem verileri",
-                          "Aile ve yakın takibi",
-                          "Topluluk paylaşımları ve özel içerikler",
-                          "Acil durum kaynaklarına hızlı erişim",
-                        ],
-                        cta: "Premium'a Geç",
-                        popular: true,
-                      },
-                      {
-                        name: "Premium+ Üyelik",
-                        description:
-                          "Profesyonel ve kurumsal ihtiyaçlar için maksimum güvenlik ve özelleştirilebilir çözümler.",
-                        features: [
-                          "Kurumsal seviye analiz ve özel raporlama",
-                          "Kişiselleştirilebilir bildirim ve analiz ayarları",
-                          "API ve entegrasyon desteği",
-                          "Sınırsız topluluk ve aile takibi",
-                          "Özel danışmanlık ve eğitim hizmetleri",
-                        ],
-                        cta: "Premium+ ile Tanış",
-                        popular: true,
-                      },
-                    ].map((plan, i) => (
-                      <motion.div
-                        key={i}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: i * 0.1 }}
+              <div className="mx-auto max-w-5xl">
+                <Tabs defaultValue="in-progress" className="w-full">
+                  <div className="flex justify-center mb-8">
+                    <TabsList className="rounded-full p-1">
+                      <TabsTrigger
+                        value="in-progress"
+                        className="rounded-full px-6"
                       >
-                        <Card
-                          className={`relative overflow-hidden h-full ${
-                            plan.popular
-                              ? "border-primary shadow-lg"
-                              : "border-border/40 shadow-md"
-                          } bg-gradient-to-b from-background to-muted/10 backdrop-blur`}
-                        >
-                          {/* {plan.popular && (
-                            <div className="absolute top-0 right-0 bg-primary text-primary-foreground px-3 py-1 text-xs font-medium rounded-bl-lg">
-                              Most Popular
-                            </div>
-                          )} */}
-                          <CardContent className="p-6 flex flex-col h-full">
-                            <h3 className="text-2xl font-bold">{plan.name}</h3>
-                            <div className="flex items-baseline mt-4">
-                              {/* <span className="text-4xl font-bold">
-                                {plan.price}
-                              </span> */}
-                              {/* <span className="text-muted-foreground ml-1">
-                                /month
-                              </span> */}
-                            </div>
-                            <p className="text-muted-foreground mt-2">
-                              {plan.description}
-                            </p>
-                            <ul className="space-y-3 my-6 flex-grow">
-                              {plan.features.map((feature, j) => (
-                                <li key={j} className="flex items-center">
-                                  <Check className="mr-2 size-4 text-primary" />
-                                  <span>{feature}</span>
-                                </li>
-                              ))}
-                            </ul>
-                            {/* <Button
-                              className={`w-full mt-auto rounded-full ${
-                                plan.popular
-                                  ? "bg-primary hover:bg-primary/90"
-                                  : "bg-muted hover:bg-muted/80"
-                              }`}
-                              variant={plan.popular ? "default" : "outline"}
-                            >
-                              {plan.cta}
-                            </Button> */}
-                          </CardContent>
-                        </Card>
-                      </motion.div>
-                    ))}
+                        Geliştiriliyor
+                      </TabsTrigger>
+                      <TabsTrigger value="soon" className="rounded-full px-6">
+                        Yakında
+                      </TabsTrigger>
+                    </TabsList>
                   </div>
-                </TabsContent>
-                <TabsContent value="soon">
-                  <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
-                    {[
-                      {
-                        name: "Starter",
-                        price: "$23",
-                        description: "Perfect for small teams and startups.",
-                        features: [
-                          "Up to 5 team members",
-                          "Basic analytics",
-                          "5GB storage",
-                          "Email support",
-                        ],
-                        cta: "Start Free Trial",
-                      },
-                      {
-                        name: "Professional",
-                        price: "$63",
-                        description: "Ideal for growing businesses.",
-                        features: [
-                          "Up to 20 team members",
-                          "Advanced analytics",
-                          "25GB storage",
-                          "Priority email support",
-                          "API access",
-                        ],
-                        cta: "Start Free Trial",
-                        popular: true,
-                      },
-                      {
-                        name: "Enterprise",
-                        price: "$159",
-                        description:
-                          "For large organizations with complex needs.",
-                        features: [
-                          "Unlimited team members",
-                          "Custom analytics",
-                          "Unlimited storage",
-                          "24/7 phone & email support",
-                          "Advanced API access",
-                          "Custom integrations",
-                        ],
-                        cta: "Contact Sales",
-                      },
-                    ].map((plan, i) => (
-                      <motion.div
-                        key={i}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: i * 0.1 }}
-                      >
-                        <Card
-                          className={`relative overflow-hidden h-full ${
-                            plan.popular
-                              ? "border-primary shadow-lg"
-                              : "border-border/40 shadow-md"
-                          } bg-gradient-to-b from-background to-muted/10 backdrop-blur`}
+                  <TabsContent value="in-progress">
+                    <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
+                      {[
+                        {
+                          name: "Hassas Deprem Alarmı",
+                          description:
+                            "Sarsıntıyı anında algıla, kritik durumlarda seni hızlıca uyaralım.",
+                          features: [
+                            "Anlık sarsıntı tespiti",
+                            "Hızlı ve güvenilir alarm",
+                            "Mobil ve masaüstü bildirimler",
+                          ],
+                          cta: "Detayları Öğren",
+                          popular: false,
+                        },
+                        {
+                          name: "Akıllı Acil Durum Planı",
+                          description:
+                            "Deprem sonrası en güvenli ve hızlı yolu yapay zeka ile bul.",
+                          features: [
+                            "Dinamik rota planlama",
+                            "Trafik ve kalabalık durumu analizli",
+                          ],
+                          cta: "Detayları Öğren",
+                          popular: false,
+                        },
+                        {
+                          name: "Akıllı Buluşma Noktası",
+                          description:
+                            "Sevdiklerinle kolayca güvenli buluşma noktaları belirle ve paylaş.",
+                          features: [
+                            "Güvenli buluşma önerileri",
+                            "Anlık konum paylaşımı",
+                            "Grup koordinasyonu",
+                          ],
+                          cta: "Detayları Öğren",
+                          popular: false,
+                        }
+                      ].map((plan, i) => (
+                        <motion.div
+                          key={i}
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.5, delay: i * 0.1 }}
                         >
-                          {/* {plan.popular && (
-                            <div className="absolute top-0 right-0 bg-primary text-primary-foreground px-3 py-1 text-xs font-medium rounded-bl-lg">
-                              Most Popular
-                            </div>
-                          )} */}
-                          <CardContent className="p-6 flex flex-col h-full">
-                            <h3 className="text-2xl font-bold">{plan.name}</h3>
-                            <div className="flex items-baseline mt-4">
-                              {/* <span className="text-4xl font-bold">
-                                {plan.price}
-                              </span>
-                              <span className="text-muted-foreground ml-1">
-                                /month
-                              </span> */}
-                            </div>
-                            <p className="text-muted-foreground mt-2">
-                              {plan.description}
-                            </p>
-                            <ul className="space-y-3 my-6 flex-grow">
-                              {plan.features.map((feature, j) => (
-                                <li key={j} className="flex items-center">
-                                  <Check className="mr-2 size-4 text-primary" />
-                                  <span>{feature}</span>
-                                </li>
-                              ))}
-                            </ul>
-                            {/* <Button
-                              className={`w-full mt-auto rounded-full ${
-                                plan.popular
-                                  ? "bg-primary hover:bg-primary/90"
-                                  : "bg-muted hover:bg-muted/80"
-                              }`}
-                              variant={plan.popular ? "default" : "outline"}
-                            >
-                              {plan.cta}
-                            </Button> */}
-                          </CardContent>
-                        </Card>
-                      </motion.div>
-                    ))}
-                  </div>
-                </TabsContent>
-              </Tabs>
+                          <Card
+                            className={`relative overflow-hidden h-full ${
+                              plan.popular
+                                ? "border-primary shadow-lg"
+                                : "border-border/40 shadow-md"
+                            } bg-gradient-to-b from-background to-muted/10 backdrop-blur`}
+                          >
+                            {/* {plan.popular && (
+                              <div className="absolute top-0 right-0 bg-primary text-primary-foreground px-3 py-1 text-xs font-medium rounded-bl-lg">
+                                Most Popular
+                              </div>
+                            )} */}
+                            <CardContent className="p-6 flex flex-col h-full">
+                              <h3 className="text-2xl font-bold">{plan.name}</h3>
+                              <div className="flex items-baseline mt-4">
+                                {/* <span className="text-4xl font-bold">
+                                  {plan.price}
+                                </span> */}
+                                {/* <span className="text-muted-foreground ml-1">
+                                  /month
+                                </span> */}
+                              </div>
+                              <p className="text-muted-foreground mt-2">
+                                {plan.description}
+                              </p>
+                              <ul className="space-y-3 my-6 flex-grow">
+                                {plan.features.map((feature, j) => (
+                                  <li key={j} className="flex items-center">
+                                    <Check className="mr-2 size-4 text-primary" />
+                                    <span>{feature}</span>
+                                  </li>
+                                ))}
+                              </ul>
+                              {/* <Button
+                                className={`w-full mt-auto rounded-full ${
+                                  plan.popular
+                                    ? "bg-primary hover:bg-primary/90"
+                                    : "bg-muted hover:bg-muted/80"
+                                }`}
+                                variant={plan.popular ? "default" : "outline"}
+                              >
+                                {plan.cta}
+                              </Button> */}
+                            </CardContent>
+                          </Card>
+                        </motion.div>
+                      ))}
+                    </div>
+                  </TabsContent>
+                  <TabsContent value="soon">
+                    <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
+                      {[
+                        {
+                          name: "Sensör Entegrasyonu",
+                          description:
+                            "Akıllı ev ve IoT cihazlarınızla deprem anında otomatik önlemler alın.",
+                          features: [
+                            "IoT cihaz bağlantısı",
+                            "Otomatik alarm sistemi",
+                            "Cihaz durumu takibi",
+                          ],
+                          cta: "Yakında",
+                          popular: false,
+                        },
+                        {
+                          name: "Topluluk Destek Ağı",
+                          description:
+                            "Gönüllüler ve yardım kuruluşlarıyla hızlı destek ve kaynak paylaşımı yapın.",
+                          features: [
+                            "Yerel gönüllü ağı",
+                            "Anlık yardım çağrısı",
+                            "Kaynak paylaşımı",
+                          ],
+                          cta: "Yakında",
+                          popular: false,
+                        },
+                        {
+                          name: "Tehlikedeyim Bildirimi",
+                          description:
+                            "İnternet olmadan, acil durumlarda yardım talebinizi hızlıca iletin. Sevdiklerinizi bilgilendirin.",
+                          features: [
+                            "Offline mesajlaşma",
+                            "Kablosuz bağlantı desteği",
+                            "Hızlı acil sinyal gönderimi",
+                          ],
+                          cta: "Yakında",
+                          popular: false,
+                        }
+                      ].map((plan, i) => (
+                        <motion.div
+                          key={i}
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.5, delay: i * 0.1 }}
+                        >
+                          <Card
+                            className={`relative overflow-hidden h-full ${
+                              plan.popular
+                                ? "border-primary shadow-lg"
+                                : "border-border/40 shadow-md"
+                            } bg-gradient-to-b from-background to-muted/10 backdrop-blur`}
+                          >
+                            {/* {plan.popular && (
+                              <div className="absolute top-0 right-0 bg-primary text-primary-foreground px-3 py-1 text-xs font-medium rounded-bl-lg">
+                                Most Popular
+                              </div>
+                            )} */}
+                            <CardContent className="p-6 flex flex-col h-full">
+                              <h3 className="text-2xl font-bold">{plan.name}</h3>
+                              <div className="flex items-baseline mt-4">
+                                {/* <span className="text-4xl font-bold">
+                                  {plan.price}
+                                </span>
+                                <span className="text-muted-foreground ml-1">
+                                  /month
+                                </span> */}
+                              </div>
+                              <p className="text-muted-foreground mt-2">
+                                {plan.description}
+                              </p>
+                              <ul className="space-y-3 my-6 flex-grow">
+                                {plan.features.map((feature, j) => (
+                                  <li key={j} className="flex items-center">
+                                    <Check className="mr-2 size-4 text-primary" />
+                                    <span>{feature}</span>
+                                  </li>
+                                ))}
+                              </ul>
+                              {/* <Button
+                                className={`w-full mt-auto rounded-full ${
+                                  plan.popular
+                                    ? "bg-primary hover:bg-primary/90"
+                                    : "bg-muted hover:bg-muted/80"
+                                }`}
+                                variant={plan.popular ? "default" : "outline"}
+                              >
+                                {plan.cta}
+                              </Button> */}
+                            </CardContent>
+                          </Card>
+                        </motion.div>
+                      ))}
+                    </div>
+                  </TabsContent>
+                </Tabs>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
         {/* FAQ Section */}
-        <section id="faq" className="w-full py-20 md:py-32">
-          <div className="container px-4 md:px-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
-            >
-              <Badge
-                className="rounded-full px-4 py-1.5 text-sm font-medium"
-                variant="secondary"
-              >
-                SSS
-              </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Sıkça Sorulan Sorular
-              </h2>
-              <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Platformumuz hakkında sıkça sorulan sorulara yanıt bulun.
-              </p>
-            </motion.div>
+<section id="faq" className="w-full py-20 md:py-32">
+  <div className="container px-4 md:px-6">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
+    >
+      <Badge
+        className="rounded-full px-4 py-1.5 text-sm font-medium"
+        variant="secondary"
+      >
+        SSS
+      </Badge>
+      <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+        Sıkça Sorulan Sorular
+      </h2>
+      <p className="max-w-[800px] text-muted-foreground md:text-lg">
+        Platformumuz hakkında sıkça sorulan sorulara yanıt bulun.
+      </p>
+    </motion.div>
 
-            <div className="mx-auto max-w-3xl">
-              <Accordion type="single" collapsible className="w-full">
-                {[
-                  {
-                    question: "How does the 14-day free trial work?",
-                    answer:
-                      "Our 14-day free trial gives you full access to all features of your selected plan. No credit card is required to sign up, and you can cancel at any time during the trial period with no obligation.",
-                  },
-                  {
-                    question: "Can I change plans later?",
-                    answer:
-                      "Yes, you can upgrade or downgrade your plan at any time. If you upgrade, the new pricing will be prorated for the remainder of your billing cycle. If you downgrade, the new pricing will take effect at the start of your next billing cycle.",
-                  },
-                  {
-                    question: "Is there a limit to how many users I can add?",
-                    answer:
-                      "The number of users depends on your plan. The Starter plan allows up to 5 team members, the Professional plan allows up to 20, and the Enterprise plan has no limit on team members.",
-                  },
-                  {
-                    question:
-                      "Do you offer discounts for nonprofits or educational institutions?",
-                    answer:
-                      "Yes, we offer special pricing for nonprofits, educational institutions, and open-source projects. Please contact our sales team for more information.",
-                  },
-                  {
-                    question: "How secure is my data?",
-                    answer:
-                      "We take security very seriously. All data is encrypted both in transit and at rest. We use industry-standard security practices and regularly undergo security audits. Our platform is compliant with GDPR, CCPA, and other relevant regulations.",
-                  },
-                  {
-                    question: "What kind of support do you offer?",
-                    answer:
-                      "Support varies by plan. All plans include email support, with the Professional plan offering priority email support. The Enterprise plan includes 24/7 phone and email support. We also have an extensive knowledge base and community forum available to all users.",
-                  },
-                ].map((faq, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: i * 0.05 }}
-                  >
-                    <AccordionItem
-                      value={`item-${i}`}
-                      className="border-b border-border/40 py-2"
-                    >
-                      <AccordionTrigger className="text-left font-medium hover:no-underline">
-                        {faq.question}
-                      </AccordionTrigger>
-                      <AccordionContent className="text-muted-foreground">
-                        {faq.answer}
-                      </AccordionContent>
-                    </AccordionItem>
-                  </motion.div>
-                ))}
-              </Accordion>
-            </div>
-          </div>
-        </section>
+    <div className="mx-auto max-w-3xl">
+      <Accordion type="single" collapsible className="w-full">
+        {[
+          {
+            question: "Deprem bildirimlerini nasıl alabilirim?",
+            answer:
+              "Platformumuza kayıt olduktan sonra konumunuza özel gerçek zamanlı deprem bildirimleri almaya başlayabilirsiniz. İster mobil, ister masaüstü cihazınızdan anında haberdar olun.",
+          },
+          {
+            question: "Deprem risk analizleri ne kadar güvenilir?",
+            answer:
+              "Yapay zeka destekli gelişmiş algoritmalar ve resmi sismik veri kaynakları kullanılarak hazırlanır. Analizler sürekli güncellenir ve bölgenizdeki risk seviyeleri detaylı olarak raporlanır.",
+          },
+          {
+            question: "Acil durumlar için topluluk desteği nasıl çalışıyor?",
+            answer:
+              "Topluluk tabanlı yardım ağı sayesinde bölgenizdeki gönüllüler ve kurumlar hızlıca organize olur. Yardım talebi gönderebilir, kaynak paylaşabilir ve destek alabilirsiniz.",
+          },
+          {
+            question: "İnternet bağlantım kesilse bile acil durum bildirimi yapabilir miyim?",
+            answer:
+              "Evet, internet olmadan da 'Tehlikedeyim' bildirimleri gönderebilirsiniz. Cihazlar arası kablosuz bağlantılar sayesinde sinyaliniz çevrenizdekilere ulaştırılır.",
+          },
+          {
+            question: "Sevdiklerimle güvenli bir ağ kurup anlık bildirimler gönderebilir miyim?",
+            answer:
+              "Evet, platformumuzla aileniz ve yakınlarınızla özel bir ağ oluşturabilir, deprem anında anında bildirimlerle birbirinizi hızlıca haberdar edebilirsiniz. Böylece sevdikleriniz her zaman güvende olur.",
+          },
+          {
+            question: "Yeni özellikler için öneri ve görüşlerimi paylaşabilir miyim?",
+            answer:
+              "Kesinlikle! Kullanıcılarımızın fikirleri bizim için çok değerli. Öneri ve taleplerinizi platformumuz üzerinden kolayca iletebilir, birlikte daha etkili ve kullanıcı odaklı çözümler geliştirebiliriz.",
+          },
+          {
+            question: "Ne tür destek hizmetleri sunuyorsunuz?",
+            answer:
+              "Bina ve zemin risk analizlerinizi yüksek hassasiyetle gerçekleştirin. Anlık ve özelleştirilebilir bildirimler sayesinde sevdiklerinize hızlıca ulaşın, onların da durumunu anında öğrenin. İnternet bağlantısı olmasa dahi, durum bildiriminizi gönderin. Geniş kapsamlı destek kaynakları ve aktif topluluk forumumuz, her zaman yanınızda olarak ihtiyaç duyduğunuzda sizi destekler.",
+          },
+        ].map((faq, i) => (
+          <motion.div
+            key={i}
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.3, delay: i * 0.05 }}
+          >
+            <AccordionItem
+              value={`item-${i}`}
+              className="border-b border-border/40 py-2"
+            >
+              <AccordionTrigger className="text-left font-medium hover:no-underline">
+                {faq.question}
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                {faq.answer}
+              </AccordionContent>
+            </AccordionItem>
+          </motion.div>
+        ))}
+      </Accordion>
+    </div>
+  </div>
+</section>
 
         {/* CTA Section */}
-        <section className="w-full py-20 md:py-32 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground relative overflow-hidden">
+        <section className="w-full py-20 md:py-25 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground relative overflow-hidden">
           <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
           <div className="absolute -top-24 -left-24 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
           <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
@@ -945,48 +939,53 @@ export default function LandingPage() {
               className="flex flex-col items-center justify-center space-y-6 text-center"
             >
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
-                Ready to Transform Your Workflow?
+              Acil Durumlara Hazırlıklı Olun. Hemen Başlayın.
               </h2>
               <p className="mx-auto max-w-[700px] text-primary-foreground/80 md:text-xl">
-                Join thousands of satisfied customers who have streamlined their
-                processes and boosted productivity with our platform.
+              Yapay zekâ destekli sistemimizle bina ve zemin risklerini analiz edin, kat durumuna göre tehlikeleri değerlendirin. Geçmiş depremleri inceleyin, internetsiz durum bildirimi ile sevdiklerinizle bağlantıda kalın. Güvenliğinizi artıran akıllı çözümlerle her an hazırlıklı olun. Hemen indirin.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mt-4">
-                <Button
-                  size="lg"
-                  variant="secondary"
-                  className="rounded-full h-12 px-8 text-base"
-                >
-                  Start Free Trial
-                  <ArrowRight className="ml-2 size-4" />
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="rounded-full h-12 px-8 text-base bg-transparent border-white text-white hover:bg-white/10"
-                >
-                  Schedule a Demo
-                </Button>
-              </div>
-              <p className="text-sm text-primary-foreground/80 mt-4">
-                No credit card required. 14-day free trial. Cancel anytime.
-              </p>
+              <a
+                href="https://apps.apple.com/app/idXXXXXXXXX" // App Store linkini buraya ekle
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                  alt="App Store'dan indir"
+                  className="h-12"
+                />
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=XXXXXXXXX" // Play Store linkini buraya ekle
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                  alt="Google Play'den indir"
+                  className="h-12"
+                />
+              </a>
+            </div>
             </motion.div>
           </div>
         </section>
+
       </main>
       <footer className="w-full border-t bg-background/95 backdrop-blur-sm">
         <div className="container flex flex-col gap-8 px-4 py-10 md:px-6 lg:py-16">
           <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
             <div className="space-y-4">
               <div className="flex items-center gap-2 font-bold">
-                <div className="h-8 px-2 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
-                  Terra
-                </div>
+              <div className="h-10 px-2 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground"
+                style={{ fontFamily: "'TT Fors Trial Demibold', sans-serif", letterSpacing: "0.17em" }}>
+                <img src="/icons/terraicon.png" alt="icon" className="h-12 w-12 mr-1" />
+                TERRA 
               </div>
+          </div>
               <p className="text-sm text-muted-foreground">
-                Depremleri takip edin, riskinizi öğrenin, güvende kalın. Hepsi
-                Terra’da.
+              Güvenliğinizi akılla yönetin: Deprem takibi, risk analizi ve daha fazlası Terra’da.
               </p>
               <div className="flex gap-4">
                 <Link

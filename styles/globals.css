@@ -73,3 +73,14 @@
     transform: translateY(0);
   }
 }
+@font-face {
+  font-family: 'TT Fors Trial Demibold';
+  src: url('/fonts/tt-fors-trial-demibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+.custom-font-spacing {
+  font-family: 'TT Fors Trial Demibold', sans-serif;
+  letter-spacing: 0.18em; /* Normal boşluğun 1.8 katı kadar artırılmış */
+}
