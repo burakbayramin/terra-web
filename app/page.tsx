@@ -131,30 +131,30 @@ export default function LandingPage() {
           <nav className="hidden md:flex gap-8 absolute left-1/2 -translate-x-1/2">
             <Link
               href="#features"
-              className="text-sm font-medium transition-colors hover:text-foreground link-muted-hover-reverse px-4 py-1 rounded-md hover:bg-muted/40 hover:text-foreground"
+              className="text-sm font-medium transition-colors text-primary-foreground hover:text-foreground link-muted-hover-reverse px-4 py-1 rounded-md hover:bg-muted/40 hover:text-foreground"
             >
               Öne Çıkanlar
             </Link>
             <Link
               href="#testimonials"
-              className="text-sm font-medium transition-colors hover:text-foreground link-muted-hover-reverse px-4 py-1 rounded-md hover:bg-muted/40 hover:text-foreground"
+              className="text-sm font-medium transition-colors text-primary-foreground hover:text-foreground link-muted-hover-reverse px-4 py-1 rounded-md hover:bg-muted/40 hover:text-foreground"
             >
               Yorumlar
             </Link>
             <Link
               href="#futurefeatures"
-              className="text-sm font-medium transition-colors hover:text-foreground link-muted-hover-reverse px-4 py-1 rounded-md hover:bg-muted/40 hover:text-foreground"
+              className="text-sm font-medium transition-colors text-primary-foreground hover:text-foreground link-muted-hover-reverse px-4 py-1 rounded-md hover:bg-muted/40 hover:text-foreground"
             >
               Gelecek Özellikler
             </Link>
             <Link
               href="#faq"
-              className="text-sm font-medium transition-colors hover:text-foreground link-muted-hover-reverse px-4 py-1 rounded-md hover:bg-muted/40 hover:text-foreground"
+              className="text-sm font-medium transition-colors text-primary-foreground hover:text-foreground link-muted-hover-reverse px-4 py-1 rounded-md hover:bg-muted/40 hover:text-foreground"
             >
               SSS
             </Link>
           </nav>
-          <div className="hidden md:flex gap-4 items-center">
+          <div className="hidden md:flex gap-4 items-center text-primary-foreground">
             <Button
               variant="ghost"
               size="icon"
