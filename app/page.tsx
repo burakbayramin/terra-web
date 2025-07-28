@@ -111,16 +111,19 @@ export default function LandingPage() {
 
   return (
     <div className="flex min-h-[100dvh] flex-col">
-      <header
+      <header 
         className={`sticky top-0 z-50 w-full backdrop-blur-lg transition-all duration-300 ${
-          isScrolled ? "bg-background/80 shadow-sm" : "bg-transparent"
+          isScrolled ? "shadow-sm" : ""
         }`}
-      >
+        style={{
+          background: 'linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary) / 0.7) 100%)'
+        }}
+>
         <div className="container flex h-20 items-center justify-between">
           <div className="flex items-center gap-2 font-bold">
-          <div className="h-10 px-2 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground"
+          <div className="h-12 px-1 flex items-center justify-center text-primary-foreground"
                 style={{ fontFamily: "'TT Fors Trial Demibold', sans-serif", letterSpacing: "0.17em" }}>
-                <img src="/icons/terraicon.png" alt="icon" className="h-12 w-12 mr-1" />
+                <img src="/icons/terraicon.png" alt="icon" className="h-16 w-16 mr-1" />
                 TERRA 
               </div>
             {/* <span>Terra</span> */}
@@ -128,25 +131,25 @@ export default function LandingPage() {
           <nav className="hidden md:flex gap-8 absolute left-1/2 -translate-x-1/2">
             <Link
               href="#features"
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              className="text-sm font-medium transition-colors hover:text-foreground link-muted-hover-reverse px-4 py-1 rounded-md hover:bg-muted/40 hover:text-foreground"
             >
               Öne Çıkanlar
             </Link>
             <Link
               href="#testimonials"
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              className="text-sm font-medium transition-colors hover:text-foreground link-muted-hover-reverse px-4 py-1 rounded-md hover:bg-muted/40 hover:text-foreground"
             >
               Yorumlar
             </Link>
             <Link
               href="#futurefeatures"
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              className="text-sm font-medium transition-colors hover:text-foreground link-muted-hover-reverse px-4 py-1 rounded-md hover:bg-muted/40 hover:text-foreground"
             >
               Gelecek Özellikler
             </Link>
             <Link
               href="#faq"
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              className="text-sm font-medium transition-colors hover:text-foreground link-muted-hover-reverse px-4 py-1 rounded-md hover:bg-muted/40 hover:text-foreground"
             >
               SSS
             </Link>

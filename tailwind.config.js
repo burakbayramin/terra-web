@@ -73,5 +73,28 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    // Header gradient utility eklentisi
+    function({ addUtilities }) {
+      const newUtilities = {
+        '.header-gradient': {
+          background: 'linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary) / 0.7) 100%)',
+        },
+        '.header-gradient-text': {
+          color: 'hsl(var(--primary-foreground) / 0.8)',
+          '&:hover': {
+            color: 'hsl(var(--primary-foreground))',
+          },
+        },
+        '.header-gradient-button': {
+          color: 'hsl(var(--primary-foreground))',
+          '&:hover': {
+            backgroundColor: 'hsl(var(--primary-foreground) / 0.2)',
+          },
+        },
+      }
+      addUtilities(newUtilities)
+    }
+  ],
 }

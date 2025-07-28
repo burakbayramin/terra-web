@@ -92,3 +92,18 @@ body {
     @apply bg-background text-foreground;
   }
 }
+@layer utilities {
+  .link-muted-hover-reverse {
+    @apply text-sm font-medium text-muted-foreground transition-colors;
+  }
+}
+
+@layer base {
+  .link-muted-hover-reverse:hover {
+    color: white !important; /* Light mode: beyaz */
+  }
+
+  .dark .link-muted-hover-reverse:hover {
+    color: white !important; /* Dark mode: siyah */
+  }
+}
