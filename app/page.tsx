@@ -542,7 +542,7 @@ export default function LandingPage() {
                 {
                   quote:
                     "Terra'nın sunduğu detaylı risk analizleriyle aile ağımız altındaki acil durum planlarını güncelledik. Bir kriz anında ortak hareket edebileceğiz.",
-                  author: "Gökçe Işıtan",
+                  author: "Gökçe IŞITAN",
                   role: "Matematik Öğretmeni",
                   rating: 4,
                 },
