@@ -522,7 +522,7 @@ export default function LandingPage() {
                   quote:
                     "Uygulamanın sunduğu harita ve raporlar, bizi gerçekten çok tatmin etti. Özellikle kişiselleştirilmiş güvenlik önerileri oldukça faydalı.",
                   author: "Hatice DEMİRBAŞ",
-                  role: "Satın Alma Uzmanı",
+                  role: "Satınalma Uzmanı",
                   rating: 5,
                 },
                 {
