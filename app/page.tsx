@@ -96,15 +96,15 @@ export default function LandingPage() {
       icon: <ShieldCheck className="size-5" />,
     },
     {
-      title: "Topluluk Paylaşımları ve Raporlar",
-      description:
-        "Uzmanların ve kullanıcıların gerçek deneyimlerine erişin, toplulukla güçlenin ve kendi deneyimlerinizi paylaşarak fark yaratın.",
+      title: "Ağ Özelliği ve Ağ İçi Özelleştirilmiş Bildirimler",
+              description:
+          "Ağınızdaki kişilerle güvenli iletişim kurun, özelleştirilmiş bildirimler alın ve acil durumlarda hızlı koordinasyon sağlayın.",
       icon: <Users className="size-5" />,
     },
     {
-      title: "Acil Durum Kaynakları",
+      title: "Çevrimdışı Acil Durum Bildirimi",
       description:
-        "Kriz anında hayat kurtaran iletişim bilgileri, barınma ve ilk yardım kaynaklarına hızlıca ulaşın; güvende kalın, hazırlıklı olun.",
+        "İnternet bağlantısı olmadan bile acil durum sinyali gönderin, yakınlarınızı uyarın ve acil durum kaynaklarına hızlıca ulaşın.",
       icon: <Phone className="size-5" />,
     },
   ];
@@ -514,43 +514,43 @@ export default function LandingPage() {
                 {
                   quote:
                     "Terra sayesinde bölgemizdeki deprem risklerini çok daha hızlı ve doğru bir şekilde analiz edebiliyoruz. Anlık bildirimler sayesinde tüm ekip anında haberdar oluyor.",
-                  author: "Ayşe Demir",
-                  role: "Afet Yönetimi Uzmanı, GüvenKent",
+                  author: "Berkant YAŞAR",
+                  role: "Kurumsal Firma Çalışanı",
                   rating: 5,
                 },
                 {
                   quote:
-                    "Uygulamanın sunduğu harita ve raporlar, çalışmalarımızı çok kolaylaştırdı. Özellikle kişiselleştirilmiş güvenlik önerileri oldukça faydalı.",
-                  author: "Mert Yılmaz",
-                  role: "Belediye Çalışanı, Marmara Belediyesi",
+                    "Uygulamanın sunduğu harita ve raporlar, bizi gerçekten çok tatmin etti. Özellikle kişiselleştirilmiş güvenlik önerileri oldukça faydalı.",
+                  author: "Hatice DEMİRBAŞ",
+                  role: "Satın Alma Uzmanı",
                   rating: 5,
                 },
                 {
                   quote:
-                    "Topluluk kısmı ve diğer kullanıcıların paylaşımları gerçekten bilgilendirici. Fakat acil durum kaynaklarına ulaşmak bazen biraz zaman alabiliyor.",
-                  author: "Elif Aydın",
-                  role: "Öğretmen, Deprem Farkındalık Gönüllüsü",
+                    "Ağım kısmı, lokasyon bazlı zemin risk analizi ve yapay zeka özellikleri gerçekten etkileyici. Fakat chat özelliği eklenebilirse daha iyi olabilir.",
+                  author: "Süeda ÇUVALCI",
+                  role: "E-Ticaret Uzmanı",
                   rating: 4,
                 },
                 {
                   quote:
-                    "Kurulum ve kullanıma başlama çok kolaydı. Müşteri desteği de oldukça hızlı ve çözüm odaklı.",
-                  author: "Hakan Kaya",
-                  role: "Bina Yöneticisi, SiteYaşam",
+                    "Uygulama içerisindeki yapay zeka sayesinde deprem ile ilgili detay bilgilere kolaylıkla ulaşabiliyoruz. Özellikle risk analizi ve tahmin özellikleri gerçekten etkileyici.",
+                  author: "Berra KARTAL",
+                  role: "Kimyager",
                   rating: 5,
                 },
                 {
                   quote:
-                    "Terra'nın sunduğu detaylı risk analizleriyle kurumumuzun acil durum planlarını güncelledik. Ancak bazen bildirimler biraz geç gelebiliyor.",
-                  author: "Sevil Şahin",
-                  role: "İSG Uzmanı, Güvenli Yapı",
+                    "Terra'nın sunduğu detaylı risk analizleriyle aile ağımız altındaki acil durum planlarını güncelledik. Bir kriz anında ortak hareket edebileceğiz.",
+                  author: "Gökçe Işıtan",
+                  role: "Matematik Öğretmeni",
                   rating: 4,
                 },
                 {
                   quote:
                     "Uygulamanın arayüzü çok sade ve anlaşılır. Deprem anında hızlıca bilgi alabiliyor ve ek kaynaklara ulaşabiliyoruz.",
-                  author: "Emre Aksoy",
-                  role: "Sağlık Çalışanı, Acil Müdahale Ekibi",
+                  author: "Emre ULUIŞIK",
+                  role: "Bilgisayar Programcısı",
                   rating: 5,
                 },
               ].map((testimonial, i) => (
