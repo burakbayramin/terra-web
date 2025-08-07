@@ -323,7 +323,7 @@ export default function LandingPage() {
                   src="/mockup.png"
                   width={1280}
                   height={720}
-                  alt="Terra dashboard"
+                  alt="Terra dashboard - Deprem takibi, AI destekli analiz ve ağ yönetimi"
                   className="w-full h-auto"
                   priority
                 />
