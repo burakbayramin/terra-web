@@ -952,22 +952,24 @@ export default function LandingPage() {
                 href="https://apps.apple.com/app/idXXXXXXXXX" // App Store linkini buraya ekle
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex-1"
               >
                 <img
                   src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                   alt="App Store'dan indir"
-                  className="h-12"
+                  className="h-12 w-auto object-contain"
                 />
               </a>
               <a
                 href="https://play.google.com/store/apps/details?id=XXXXXXXXX" // Play Store linkini buraya ekle
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex-1"
               >
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
                   alt="Google Play'den indir"
-                  className="h-12"
+                  className="h-12 w-auto object-contain"
                 />
               </a>
             </div>
@@ -991,8 +993,8 @@ export default function LandingPage() {
               Güvenliğinizi akılla yönetin: Deprem takibi, risk analizi ve daha fazlası Terra’da.
               </p>
               <div className="flex gap-4">
-                <Link
-                  href="#"
+                <button
+                  onClick={() => window.open('https://www.facebook.com/profile.php?id=61577754766905', '_blank')}
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   <svg
@@ -1010,9 +1012,9 @@ export default function LandingPage() {
                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                   </svg>
                   <span className="sr-only">Facebook</span>
-                </Link>
-                <Link
-                  href="#"
+                </button>
+                <button
+                  onClick={() => window.open('https://x.com/terraapp_tr', '_blank')}
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   <svg
@@ -1029,10 +1031,10 @@ export default function LandingPage() {
                   >
                     <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
                   </svg>
-                  <span className="sr-only">Twitter</span>
-                </Link>
-                <Link
-                  href="#"
+                  <span className="sr-only">X (Twitter)</span>
+                </button>
+                <button
+                  onClick={() => window.open('https://www.linkedin.com/company/terraapp', '_blank')}
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   <svg
@@ -1052,7 +1054,50 @@ export default function LandingPage() {
                     <circle cx="4" cy="4" r="2"></circle>
                   </svg>
                   <span className="sr-only">LinkedIn</span>
-                </Link>
+                </button>
+                <button
+                  onClick={() => window.open('https://www.instagram.com/terraapp.tr/', '_blank')}
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="size-5"
+                  >
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                  </svg>
+                  <span className="sr-only">Instagram</span>
+                </button>
+                <button
+                  onClick={() => window.open('https://www.tiktok.com/@terraapp?_t=ZS-8ygezPmWuTC&_r=1', '_blank')}
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="size-5"
+                  >
+                    <path d="M9 12a4 4 0 1 0 4 4V4a5.78 5.78 0 0 0 0 .571"></path>
+                    <path d="M9 12a4 4 0 1 0 4 4V4a5.78 5.78 0 0 0 0 .571"></path>
+                  </svg>
+                  <span className="sr-only">TikTok</span>
+                </button>
               </div>
             </div>
             <div className="space-y-4">
