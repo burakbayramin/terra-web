@@ -136,6 +136,12 @@ export default function LandingPage() {
               Öne Çıkanlar
             </Link>
             <Link
+              href="#app-features"
+              className="text-sm font-medium transition-colors text-primary-foreground hover:text-foreground link-muted-hover-reverse px-4 py-1 rounded-md hover:bg-muted/40 hover:text-foreground"
+            >
+              Uygulama Özellikleri
+            </Link>
+            <Link
               href="#testimonials"
               className="text-sm font-medium transition-colors text-primary-foreground hover:text-foreground link-muted-hover-reverse px-4 py-1 rounded-md hover:bg-muted/40 hover:text-foreground"
             >
@@ -221,6 +227,13 @@ export default function LandingPage() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Öne Çıkanlar
+              </Link>
+              <Link
+                href="#app-features"
+                className="py-2 text-sm font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Uygulama Özellikleri
               </Link>
               <Link
                 href="#testimonials"
@@ -413,6 +426,119 @@ export default function LandingPage() {
                 </motion.div>
               ))}
             </motion.div>
+          </div>
+        </section>
+
+        {/* App Features Demo Section */}
+        <section id="app-features" className="w-full py-20 md:py-32 bg-muted/30 relative overflow-hidden">
+          <div className="absolute inset-0 -z-10 h-full w-full bg-white dark:bg-black bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#1f1f1f_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_40%,transparent_100%)]"></div>
+
+          <div className="container px-4 md:px-6 relative">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col items-center justify-center space-y-4 text-center mb-16"
+            >
+              <Badge
+                className="rounded-full px-4 py-1.5 text-sm font-medium"
+                variant="secondary"
+              >
+                Uygulama Özellikleri
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+                Terra'yı Keşfedin
+              </h2>
+              <p className="max-w-[800px] text-muted-foreground md:text-lg">
+                Uygulamamızın en önemli özelliklerini canlı olarak görün ve nasıl çalıştığını deneyimleyin
+              </p>
+            </motion.div>
+
+            <div className="space-y-16 max-w-7xl mx-auto">
+              {[
+                {
+                  title: "Deprem İstatistikleri",
+                  description: "Detaylı deprem verileri ve istatistiksel analizler. Bölgenizdeki sismik aktiviteyi tarihsel verilerle karşılaştırın ve trendleri analiz edin. Gerçek zamanlı veri akışı ile anlık güncellemeler alın, tarihsel karşılaştırmalar yaparak risk değerlendirmesi gerçekleştirin.",
+                  gif: "/gifs/DepremIstatistikleri.gif",
+                  features: ["Gerçek zamanlı veri", "Tarihsel analiz", "Risk değerlendirmesi"]
+                },
+                {
+                  title: "Çoklu Kaynak Desteği",
+                  description: "Farklı veri kaynakları arasında kolayca geçiş yapın. En güncel ve güvenilir bilgilere her zaman erişin. Çoklu kaynak entegrasyonu ile veri doğruluğunu artırın ve hızlı geçiş yaparak farklı perspektiflerden analiz yapın.",
+                  gif: "/gifs/SourceChangeCarousel.gif",
+                  features: ["Çoklu kaynak desteği", "Hızlı geçiş", "Veri doğrulama"]
+                },
+                {
+                  title: "Kullanıcı Dostu Arayüz",
+                  description: "Yapay zeka destekli deprem analizi ve yorumları ile karmaşık sismik verileri anlaşılır bilgilere dönüştürün. Kullanıcı dostu arayüz sayesinde AI destekli analizleri kolayca takip edin, risk tahminlerini görüntüleyin ve kullanıcı yorumları ile etkileşimde bulunun.",
+                  gif: "/gifs/EarthquakeDetail.gif",
+                  features: ["AI destekli analiz", "Risk tahminleri", "Kullanıcı yorumları ve etkileşimleri"]
+                }
+              ].map((feature, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: i * 0.3 }}
+                  className={`grid lg:grid-cols-3 gap-8 items-center ${
+                    i % 2 === 0 ? 'lg:grid-flow-col' : 'lg:grid-flow-col-dense'
+                  }`}
+                >
+                  {/* GIF Alanı */}
+                  <div className={`${i % 2 === 0 ? 'lg:col-start-1' : 'lg:col-start-3'}`}>
+                    <Card className="overflow-hidden border-border/40 bg-gradient-to-b from-background to-muted/10 backdrop-blur transition-all hover:shadow-lg hover:scale-[1.02]">
+                      <CardContent className="p-0">
+                        <div className="relative">
+                          <Image
+                            src={feature.gif}
+                            width={800}
+                            height={600}
+                            alt={feature.title}
+                            className="w-full h-auto rounded-t-lg object-cover"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-t-lg"></div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
+
+                  {/* Boş Alan */}
+                  <div className="hidden lg:block"></div>
+
+                  {/* Açıklama Alanı */}
+                  <div className={`${i % 2 === 0 ? 'lg:col-start-3' : 'lg:col-start-1'}`}>
+                    <div className="space-y-6 p-6 bg-gradient-to-br from-background/50 to-muted/20 rounded-xl border border-border/30 backdrop-blur-sm">
+                      <div className="space-y-3">
+                        <h3 className="text-3xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
+                          {feature.title}
+                        </h3>
+                        <div className="w-16 h-1 bg-gradient-to-r from-primary to-primary/60 rounded-full"></div>
+                      </div>
+                      
+                      <p className="text-lg text-muted-foreground leading-relaxed font-medium">
+                        {feature.description}
+                      </p>
+                      
+                      <div className="space-y-3">
+                        <h4 className="text-sm font-semibold text-foreground/80 uppercase tracking-wide">
+                          Öne Çıkan Özellikler
+                        </h4>
+                        <div className="grid gap-3">
+                          {feature.features.map((feat, j) => (
+                            <div key={j} className="flex items-center gap-3 p-3 bg-background/40 rounded-lg border border-border/20 hover:bg-background/60 transition-colors">
+                              <div className="size-3 rounded-full bg-gradient-to-r from-primary to-primary/80 flex-shrink-0"></div>
+                              <span className="text-base text-foreground font-medium">{feat}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </section>
 
